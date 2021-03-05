@@ -1,3 +1,3 @@
 # Formulator
 
-- This app helps dietians to calcualte baby formula
+- This app helps dietitians to calculate baby formula

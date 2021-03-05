@@ -1,0 +1,28 @@
+{
+  "name": "formulator",
+  "version": "1.0.0",
+  "description": "- This app helps dietitians to calculate baby formula",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EugeneIgnatov/Formulator.git"
+  },
+  "author": "ignatov/biggs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EugeneIgnatov/Formulator/issues"
+  },
+  "homepage": "https://formulator-ignatov-biggs.herokuapp.com/",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
