@@ -1,3 +1,10 @@
+//collors
+
+$color-white: #ffffff;
+$color-light-blue-text: #add6eb;
+$color-light-blue-radial: #99cce6;
+$color-dark-blue-radial: #4582a1;
+
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
     @media (max-width: 37.5em) {
