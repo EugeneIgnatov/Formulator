@@ -20,20 +20,23 @@ const TableCalc = ({ selectedFormula, kcalOz = 0, scoops = 0 }) => {
   const dispMlOz = (formula) => formula - 10 + kcalOz;
   const totalCal = (formula) => formula + 12 - kcalOz;
   return (
-    <div className='section-footer'>
-      <div>
-        Disp (ml/ scp)
-        <p>{dispMlOz(g_poweder_level_cup)}</p>
+    <>
+      <hr></hr>
+      <div className='table-calc'>
+        <div>
+          Disp (ml/ scp)
+          <p>{dispMlOz(g_poweder_level_cup)}</p>
+        </div>
+        <div>
+          Formula Total Vol. (oz)
+          <p>{formulaTotalVol(g_poweder_can)}</p>
+        </div>
+        <div>
+          Total Cals/ Formula
+          <p>{totalCal(g_poweder_tsp)}</p>
+        </div>
       </div>
-      <div>
-        Formula Total Vol. (oz)
-        <p>{formulaTotalVol(g_poweder_can)}</p>
-      </div>
-      <div>
-        Total Cals/ Formula
-        <p>{totalCal(g_poweder_tsp)}</p>
-      </div>
-    </div>
+    </>
   );
 };
 

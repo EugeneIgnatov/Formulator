@@ -52,59 +52,7 @@ body {
   @include respond(tab-port) {
     padding: 1rem 1rem;
   }
+  @include respond(phone) {
+    display: block;
+  }
 }
-
-//   input,
-//
-//   select {
-//     width: 41rem;
-//     font-size: larger;
-//     color: gray;
-//   }
-//   input {
-//     text-align: center;
-//     width: 9.5rem;
-//   }
-// }
-// .section {
-//   display: flex;
-//   justify-content: space-between;
-
-//   &_water-div {
-//     width: 34%;
-//   }
-//   &_water-header {
-//     margin-bottom: 2rem;
-
-//     font-size: 1.8rem;
-//   }
-//   &_water-ml {
-//     font-size: 4.5rem;
-//   }
-//   &_water-oz {
-//     font-size: 3rem;
-//     color: $color-light-blue-text;
-//     margin-left: 30%;
-//   }
-//   &_data-header {
-//     margin-bottom: 2rem;
-
-//     font-size: 1.8rem;
-//   }
-//   &_data {
-//     width: 41rem;
-//   }
-// }
-
-// .section-footer {
-//   margin-top: 2rem;
-//   display: flex;
-//   justify-content: space-between;
-//   color: $color-light-blue-text;
-//   font-size: 1rem;
-
-//   & p {
-//     color: $color-white;
-//     font-size: 1.5rem;
-//   }
-// }

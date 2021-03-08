@@ -44,7 +44,7 @@ const SelectTable = ({ selectedFormula }) => {
             <td className='table-data-cell-right'>{g_poweder_can}</td>
             <td>{oz_lbs_powder_can}</td>
           </tr>
-          <tr>
+          <tr className='tr'>
             <th>g pwd/Tbsp</th>
             <th>g pwd/tsp</th>
             <th>disp (ml/g)</th>

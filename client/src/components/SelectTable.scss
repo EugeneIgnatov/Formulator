@@ -5,11 +5,14 @@ table {
   margin-top: 4rem;
   border-collapse: collapse;
   text-align: center;
+  width: 45rem;
+  @include respond(tab-land) {
+    width: 40rem;
+  }
 }
 .tr {
   color: $color-light-blue-text;
   font-size: small;
-  // width: 400rem;
 }
 
 td {
@@ -25,8 +28,4 @@ td {
 
 .table-data-cell-right {
   border-right: 1px solid $color-white;
-}
-
-hr {
-  border: 1px solid $color-light-blue-text;
 }

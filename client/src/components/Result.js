@@ -1,4 +1,5 @@
 import React from 'react';
+import './Result.scss';
 
 const Result = ({ selectedFormula, kcalOz = 0, scoops = 0 }) => {
   const {
@@ -21,10 +22,16 @@ const Result = ({ selectedFormula, kcalOz = 0, scoops = 0 }) => {
     return (formulala - 10) * oz;
   };
   return (
-    <div className='section_water-div'>
-      <h2>Water</h2>
-      <p className='section_water-ml'>{ml(kcal_g, kcalOz)}ml</p>
-      <p className='section_water-oz'>{oz(g_poweder_can, scoops)}oz</p>
+    <div className='section'>
+      <h3>Water</h3>
+      <p className='section_water-ml'>
+        {ml(kcal_g, kcalOz)}
+        <span>ml</span>
+      </p>
+      <p className='section_water-oz'>
+        {oz(g_poweder_can, scoops)}
+        <span>oz</span>
+      </p>
     </div>
   );
 };
