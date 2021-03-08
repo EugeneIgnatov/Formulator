@@ -1,0 +1,32 @@
+@import '../base.scss';
+
+table {
+  margin-bottom: 5rem;
+  margin-top: 4rem;
+  border-collapse: collapse;
+  text-align: center;
+}
+.tr {
+  color: $color-light-blue-text;
+  font-size: small;
+  // width: 400rem;
+}
+
+td {
+  font-size: 1.5rem;
+  line-height: 2.7rem;
+}
+.table-data-row-top {
+  border-bottom: 1px solid $color-white;
+}
+.table-data-row-bottom {
+  border-top: 1px solid $color-white;
+}
+
+.table-data-cell-right {
+  border-right: 1px solid $color-white;
+}
+
+hr {
+  border: 1px solid $color-light-blue-text;
+}

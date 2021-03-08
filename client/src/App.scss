@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import './base.scss';
-
+*,
 *::after,
 *::before {
   margin: 0;
@@ -26,6 +27,11 @@ html {
     font-size: 100%;
   }
 }
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+}
 
 .App {
   background: radial-gradient(
@@ -37,122 +43,68 @@ html {
   color: $color-white;
   padding: 10em 20rem;
   font-weight: 400;
-  // display: flexbox;
-}
-
-.header {
-  text-align: center;
-  margin-bottom: 3em;
-}
-.header_select {
-  display: flex;
-  flex-direction: column;
-  margin-right: 3rem;
-}
-.header_input {
-  display: flex;
-  flex-direction: column;
-}
-form {
-  margin-bottom: 2em;
-  font-size: larger;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  label {
-    margin-bottom: 0.5rem;
-    font-size: 1.8rem;
-  }
-
-  input,
-  select {
-    height: 4rem;
-    outline: none;
-    border: none;
-    border-radius: 0.5rem;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.35);
-  }
-  select {
-    width: 41rem;
-    font-size: larger;
-    color: gray;
-  }
-  input {
-    text-align: center;
-    width: 9.5rem;
-  }
-}
-.section {
   display: flex;
   justify-content: space-between;
 
-  &_water-div {
-    width: 34%;
+  @include respond(tab-land) {
+    padding: 10rem 10rem;
   }
-  &_water-header {
-    margin-bottom: 2rem;
-
-    font-size: 1.8rem;
-  }
-  &_water-ml {
-    font-size: 4.5rem;
-  }
-  &_water-oz {
-    font-size: 3rem;
-    color: $color-light-blue-text;
-    margin-left: 30%;
-  }
-  &_data-header {
-    margin-bottom: 2rem;
-
-    font-size: 1.8rem;
-  }
-  &_data {
-    width: 41rem;
+  @include respond(tab-port) {
+    padding: 1rem 1rem;
   }
 }
 
-.section-footer {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: space-between;
-  color: $color-light-blue-text;
-  font-size: 1rem;
+//   input,
+//
+//   select {
+//     width: 41rem;
+//     font-size: larger;
+//     color: gray;
+//   }
+//   input {
+//     text-align: center;
+//     width: 9.5rem;
+//   }
+// }
+// .section {
+//   display: flex;
+//   justify-content: space-between;
 
-  & p {
-    color: $color-white;
-    font-size: 1.5rem;
-  }
-}
-table {
-  width: 100%;
-  margin-bottom: 5rem;
-  border-collapse: collapse;
-}
-th {
-  color: $color-light-blue-text;
-  font-size: 1rem;
-}
-tr {
-  text-align: center;
-  line-height: 1.5rem;
-}
-td {
-  font-size: 1.5rem;
-  line-height: 2.7rem;
-}
-.table-data-row-top {
-  border-bottom: 1px solid $color-white;
-}
-.table-data-row-bottom {
-  border-top: 1px solid $color-white;
-}
+//   &_water-div {
+//     width: 34%;
+//   }
+//   &_water-header {
+//     margin-bottom: 2rem;
 
-.table-data-cell-right {
-  border-right: 1px solid $color-white;
-}
+//     font-size: 1.8rem;
+//   }
+//   &_water-ml {
+//     font-size: 4.5rem;
+//   }
+//   &_water-oz {
+//     font-size: 3rem;
+//     color: $color-light-blue-text;
+//     margin-left: 30%;
+//   }
+//   &_data-header {
+//     margin-bottom: 2rem;
 
-hr {
-  border: 1px solid $color-light-blue-text;
-}
+//     font-size: 1.8rem;
+//   }
+//   &_data {
+//     width: 41rem;
+//   }
+// }
+
+// .section-footer {
+//   margin-top: 2rem;
+//   display: flex;
+//   justify-content: space-between;
+//   color: $color-light-blue-text;
+//   font-size: 1rem;
+
+//   & p {
+//     color: $color-white;
+//     font-size: 1.5rem;
+//   }
+// }
